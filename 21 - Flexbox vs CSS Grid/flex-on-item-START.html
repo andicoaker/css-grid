@@ -13,7 +13,7 @@
   <div class="controls">
     <button>⏯️</button>
     <button>🐢</button>
-    <button>🐰</button>
+    <!-- <button>🐰</button> -->
     <div class="scrubber"></div>
     <button>💬</button>
     <button>🔽</button>
@@ -22,6 +22,12 @@
   <style>
     .controls {
       margin: 200px 0;
+      /* display: flex; */
+      /* align-items: center; */
+
+      display: grid;
+      grid-template-columns: auto auto auto 1fr auto auto;
+      align-items: center;
     }
 
     .scrubber {
@@ -29,6 +35,7 @@
       height: 10px;
       min-width: 100px;
       border-radius: 10px;
+      /* flex: 1; */
     }
   </style>
 

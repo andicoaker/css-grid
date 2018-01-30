@@ -56,6 +56,7 @@
     /*
       justify-items:
       align-items:
+      place-items: shorthand for both justify-items & align-items
 
       justify-content:
       align-content:
@@ -70,7 +71,17 @@
     .container {
       display: grid;
       grid-gap: 20px;
-      grid-template-columns: repeat(10, 1fr);
+      border: 10px solid var(--yellow);
+      grid-template-columns: repeat(5, 130px);
+      grid-template-rows: repeat(5, 100px);
+      /* justify-items: center;
+      align-items: center; */
+      place-items: stretch stretch; 
+      justify-content: space-between;
+    }
+
+    .itm {
+      background: white;
     }
   </style>
 </body>
